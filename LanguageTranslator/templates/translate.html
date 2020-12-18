@@ -1,0 +1,20 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type='text/css' rel='stylesheet' href='{% static "css/style.css" %}' />
+    <title>Document</title>
+</head>
+
+<body>
+    <form method='post' action='{% url "translate" %}'>
+        {% csrf_token %}
+        <textarea class='text1 text' placeholder="Enter Your Text or Words" name='text'></textarea>
+        <input type="submit" value='Translate' class='btn' />
+        <textarea class='text2 text' placeholder="Please wait a few second...">{{datas}}</textarea>
+    </form>
+</body>
+
+</html>
