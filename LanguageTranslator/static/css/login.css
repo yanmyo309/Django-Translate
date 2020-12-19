@@ -1,0 +1,30 @@
+body {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.font {
+    color: brown;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.font:hover {
+    color: aquamarine;
+}
+
+h1 {
+    color: chocolate;
+}
